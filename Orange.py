@@ -7,5 +7,5 @@ def random_number_gen():
 
 class Orange:
     def __init__(self):
-      self.diameter = random_number_gen()
+      self.diameter = random_number_gen() 
 
