@@ -12,12 +12,17 @@ from OrangeTree import OrangeTree
 
 def main():
 
-  tree = OrangeTree();
+  tree = OrangeTree()
+
 
   while not tree.is_mature():
     tree.pass_growing_season()
     print(tree)
-
+  
+  if tree.has_oranges():
+    orange = tree.harvest_orange()
+    print(orange.diameter)
+  print(tree)
 
   print("Tree matured")
 
